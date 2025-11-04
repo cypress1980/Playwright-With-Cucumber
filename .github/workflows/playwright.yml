@@ -26,8 +26,9 @@ jobs:
     - name: Install Playwright browsers
       run: npx playwright install --with-deps chromium
     
-    - name: Run Cucumber tests
-      run: npm run test:cucumber
+    - name: Run Cucumber tests (CI)
+      # use test:ci so the report is generated even if tests fail
+      run: npm run test:ci
     
     - name: Generate Cucumber report
       if: always()

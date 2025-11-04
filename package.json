@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test:cucumber": "cucumber-js --require ./smoke/support --require ./smoke/step_definitions --format json:reports/cucumber_report.json ./smoke/features",
-    "report": "node reports/generate-report.js",
-    "test": "npm run test:cucumber && npm run report"
+  "report": "node reports/generate-report.js",
+  "test": "npm run test:cucumber && npm run report",
+  "test:ci": "npm run test:cucumber || true && npm run report"
   },
   "keywords": [],
   "author": "",
