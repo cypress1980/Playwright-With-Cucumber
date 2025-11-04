@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const assert = require('assert');
-const CartPage = require('./cart.page');
+const CartPage = require('../cart/cart.page');
 const CheckoutPage = require('../checkout/checkout.page');
 const data = require('../../../../utils/data.json');
 
