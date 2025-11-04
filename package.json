@@ -4,7 +4,7 @@
   "description": "Playwright + Cucumber BDD POM example for saucedemo",
   "main": "index.js",
   "scripts": {
-  "test:cucumber": "cucumber-js --require ./smoke/support --require ./smoke/step_definitions --format json:reports/cucumber_report.json ./smoke/features",
+    "test:cucumber": "cucumber-js --require ./smoke/support --require ./smoke/step_definitions --format json:reports/cucumber_report.json ./smoke/features",
     "report": "node reports/generate-report.js",
     "test": "npm run test:cucumber && npm run report"
   },
@@ -13,7 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "@cucumber/cucumber": "^9.0.0",
-    "cucumber-html-reporter": "^5.5.0",
     "playwright": "^1.56.1"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^7.1.0",
+    "multiple-cucumber-html-reporter": "^3.9.2"
   }
 }
