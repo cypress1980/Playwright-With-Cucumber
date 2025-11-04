@@ -1,18 +1,9 @@
-const { setWorldConstructor, Before, After } = require('@cucumber/cucumber');
+const { Before, After } = require('@cucumber/cucumber');
 const playwright = require('playwright');
 
-class CustomWorld {
-  constructor() {
-    this.browser = null;
-    this.page = null;
-    this.context = null;
-  }
-}
 
-setWorldConstructor(CustomWorld);
 
 Before(async function () {
-  // launch browser and new page for each scenario
   this.browser = await playwright.chromium.launch({ headless: true });
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
