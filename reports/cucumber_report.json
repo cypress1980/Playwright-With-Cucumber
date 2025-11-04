@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 133657458
+              "duration": 131771250
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "I open the saucedemo homepage",
             "match": {
-              "location": "smoke/step_definitions/steps.js:10"
+              "location": "smoke/step_definitions/pages/login/login.steps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 411785333
+              "duration": 427553125
             }
           },
           {
@@ -36,102 +36,11 @@
             "line": 6,
             "name": "I login with standard user",
             "match": {
-              "location": "smoke/step_definitions/steps.js:15"
+              "location": "smoke/step_definitions/pages/login/login.steps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 105253917
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I add one product to the cart",
-            "match": {
-              "location": "smoke/step_definitions/steps.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 41020040
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I open the cart",
-            "match": {
-              "location": "smoke/step_definitions/steps.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 34757582
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I click checkout",
-            "match": {
-              "location": "smoke/step_definitions/steps.js:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 32356667
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I enter checkout information",
-            "match": {
-              "location": "smoke/step_definitions/steps.js:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6657417
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I continue to overview",
-            "match": {
-              "location": "smoke/step_definitions/steps.js:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 27083833
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I finish the order",
-            "match": {
-              "location": "smoke/step_definitions/steps.js:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 33777834
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I should see the success message \"Thank you for your order\"",
-            "match": {
-              "location": "smoke/step_definitions/steps.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1159583
+              "duration": 93946665
             }
           },
           {
@@ -139,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11696166
+              "duration": 11351916
             }
           }
         ],
@@ -162,6 +71,6 @@
         "line": 1
       }
     ],
-    "uri": "smoke/features/sauce.feature"
+    "uri": "smoke/features/sauceDemoLogin.feature"
   }
 ]
