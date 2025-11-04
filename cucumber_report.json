@@ -1,0 +1,76 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-purchase-flow;successful-purchase-flow-for-one-product",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful purchase flow for one product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 939664490
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "smoke/step_definitions/pages/login/login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 450490244
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with standard user",
+            "match": {
+              "location": "smoke/step_definitions/pages/login/login.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113918231
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46970986
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-purchase-flow",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Sauce Demo purchase flow",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "smoke/features/sauceDemoLogin.feature"
+  }
+]
