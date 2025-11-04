@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 149131500
+              "duration": 166546125
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 417359292
+              "duration": 524014750
             }
           },
           {
@@ -39,8 +39,9 @@
               "location": "smoke/step_definitions/pages/login/login.steps.js:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 104566666
+              "status": "failed",
+              "duration": 5000336583,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/kailash.pathak/Documents/PW_With_JS/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
             }
           },
           {
@@ -48,7 +49,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11744874
+              "duration": 17104833
             }
           }
         ],
@@ -72,5 +73,76 @@
       }
     ],
     "uri": "smoke/features/sauceDemoLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-purchase-flow;successful-purchase-flow-for-one-product",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful purchase flow for one product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 146529249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "smoke/step_definitions/pages/login/login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 382940916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with standard2 user",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10073709
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-purchase-flow",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Sauce Demo purchase flow",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "smoke/features/sauceDemoLoginNegative.feature"
   }
 ]
