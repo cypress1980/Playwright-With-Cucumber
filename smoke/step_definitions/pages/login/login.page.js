@@ -4,7 +4,7 @@ class LoginPage {
     this.url = 'https://www.saucedemo.com/';
     this.username = '#user-name';
     this.password = '#password';
-    this.loginButton = '#login-button1';
+    this.loginButton = '#login-button';
   }
 
   async open() {

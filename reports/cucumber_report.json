@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 166546125
+              "duration": 132753792
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 524014750
+              "duration": 516613458
             }
           },
           {
@@ -39,9 +39,8 @@
               "location": "smoke/step_definitions/pages/login/login.steps.js:11"
             },
             "result": {
-              "status": "failed",
-              "duration": 5000336583,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/kailash.pathak/Documents/PW_With_JS/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+              "status": "passed",
+              "duration": 102195749
             }
           },
           {
@@ -49,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 17104833
+              "duration": 12302291
             }
           }
         ],
@@ -89,7 +88,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 146529249
+              "duration": 109807457
             }
           },
           {
@@ -102,7 +101,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 382940916
+              "duration": 440174500
             }
           },
           {
@@ -120,7 +119,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 10073709
+              "duration": 9625750
             }
           }
         ],
