@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 235040774
+              "duration": 1126197145
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "I open the saucedemo homepage",
             "match": {
-              "location": "smoke/step_definitions/pages/login/login.steps.js:6"
+              "location": "smoke/step_definitions/pages/login/login.steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 333284277
+              "duration": 305281611
             }
           },
           {
@@ -36,11 +36,125 @@
             "line": 6,
             "name": "I login with standard user",
             "match": {
-              "location": "smoke/step_definitions/pages/login/login.steps.js:11"
+              "location": "smoke/step_definitions/pages/login/login.steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 139251166
+              "duration": 124402478
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add one product to the cart",
+            "match": {
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 367243
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I open the cart",
+            "match": {
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234506
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click checkout",
+            "match": {
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234546
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 883605,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'click')\n    at CartPage.addToCart (/home/runner/work/Playwright-With-Cucumber/Playwright-With-Cucumber/smoke/step_definitions/pages/cart/cart.page.js:22:25)\n    at World.<anonymous> (/home/runner/work/Playwright-With-Cucumber/Playwright-With-Cucumber/smoke/step_definitions/pages/cart/cart.steps.js:9:14)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-purchase-flow",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Sauce Demo purchase flow",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "smoke/features/sauceDemoAddCart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-purchase-flow;successful-purchase-flow-for-one-product",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful purchase flow for one product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89178165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the saucedemo homepage",
+            "match": {
+              "location": "smoke/step_definitions/pages/login/login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183757455
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with standard user",
+            "match": {
+              "location": "smoke/step_definitions/pages/login/login.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120727390
             }
           },
           {
@@ -48,7 +162,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36478908
+              "duration": 31384568
             }
           }
         ],
@@ -72,76 +186,5 @@
       }
     ],
     "uri": "smoke/features/sauceDemoLogin.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "sauce-demo-purchase-flow;successful-purchase-flow-for-one-product",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Successful purchase flow for one product",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 83216041
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I open the saucedemo homepage",
-            "match": {
-              "location": "smoke/step_definitions/pages/login/login.steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 258837509
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I login with standard2 user",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 31516512
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "sauce-demo-purchase-flow",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Sauce Demo purchase flow",
-    "tags": [
-      {
-        "name": "@smoke",
-        "line": 1
-      }
-    ],
-    "uri": "smoke/features/sauceDemoLoginNegative.feature"
   }
 ]
