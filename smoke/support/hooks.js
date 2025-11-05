@@ -1,8 +1,6 @@
 const { Before, After } = require('@cucumber/cucumber');
 const playwright = require('playwright');
 
-
-
 Before(async function () {
   this.browser = await playwright.chromium.launch({ headless: true });
   this.context = await this.browser.newContext();

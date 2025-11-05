@@ -1,6 +1,5 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const LoginPage = require('./login.page');
-const InventoryPage = require('../inventary/inventory.page');
 const data = require('../../../../utils/data.json');
 
 Given('I open the saucedemo homepage', async function() {
