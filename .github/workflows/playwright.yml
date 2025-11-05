@@ -6,11 +6,20 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Test suite to run (smoke/regression)'
+        required: true
+        default: 'smoke'
+        type: choice
+        options:
+          - smoke
+          - regression
 
 jobs:
-  test:
+  smoke:
+    if: github.event_name != 'workflow_dispatch' || github.event.inputs.test_suite == 'smoke'
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     
@@ -26,19 +35,59 @@ jobs:
     - name: Install Playwright browsers
       run: npx playwright install --with-deps chromium
     
-    - name: Run Cucumber tests (CI)
-      # use test:ci so the report is generated even if tests fail
-      run: npm run test:ci
+    - name: Run Smoke Tests
+      run: npm run test:ci:smoke
     
     - name: Generate Cucumber report
       if: always()
       run: npm run report
     
-    - name: Upload Cucumber report
+    - name: Upload Smoke Test Report
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: cucumber-report
+        name: smoke-test-report
+        path: reports/cucumber_report.html
+        retention-days: 30
+
+    - name: Deploy report to GitHub Pages
+      if: success() && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: reports
+        publish_branch: gh-pages
+
+  regression:
+    if: github.event.inputs.test_suite == 'regression'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Install Playwright browsers
+      run: npx playwright install --with-deps chromium
+    
+    - name: Run Regression Tests
+      run: npm run test:ci:regression
+    
+    - name: Generate Cucumber report
+      if: always()
+      run: npm run report
+    
+    - name: Upload Regression Test Report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: regression-test-report
         path: reports/cucumber_report.html
         retention-days: 30
 

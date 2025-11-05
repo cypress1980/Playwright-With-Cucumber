@@ -1,4 +1,4 @@
-@smoke
+@regression
 Feature: Sauce Demo purchase flow
 
   Scenario: Successful purchase flow for one product
