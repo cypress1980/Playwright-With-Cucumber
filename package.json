@@ -4,12 +4,12 @@
   "description": "Playwright + Cucumber BDD POM example for saucedemo",
   "main": "index.js",
   "scripts": {
-  "test:cucumber:smoke": "cucumber-js --require ./smoke/support --require ./smoke/step_definitions --format json:reports/cucumber_report.json --tags @smoke ./smoke/features",
-   "test:cucumber:regression": "cucumber-js --require ./smoke/support --require ./smoke/step_definitions --format json:reports/cucumber_report.json --tags @regression ./smoke/features",
-  "report": "node reports/generate-report.js",
-  "test": "npm run test:cucumber && npm run report",
-  "test:ci:smoke": "npm run test:cucumber:smoke || true && npm run report",
-  "test:ci:regression": "npm run test:cucumber:regression || true && npm run report"
+    "test:cucumber:smoke": "cucumber-js --require ./smoke/support --require ./smoke/step_definitions --format json:reports/cucumber_report.json --tags @smoke ./smoke/features",
+    "test:cucumber:regression": "cucumber-js --require ./smoke/support --require ./smoke/step_definitions --format json:reports/cucumber_report.json --tags @regression ./smoke/features",
+    "report": "node reports/generate-report.js",
+    "test": "npm run test:cucumber && npm run report",
+    "test:ci:smoke": "npm run test:cucumber:smoke || true && npm run report",
+    "test:ci:regression": "npm run test:cucumber:regression || true && npm run report"
   },
   "keywords": [],
   "author": "",
