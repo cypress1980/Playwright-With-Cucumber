@@ -9,27 +9,27 @@ Before(async function() {
     cartPage = new CartPage(this.page);
 });
 
-When('I add one product to the cart', async function() {
-    await cartPage.addToCart();
+When(/^I add one product to the cart/, async function() {
+     cartPage.addToCart();
 });
 
-When('I open the cart', async function() {
+When(/^I open the cart/, async function() {
     await cartPage.openCart();
 });
 
-When('I click checkout', async function() {
+When(/^I click checkout/, async function() {
     await cartPage.clickCheckout();
 });
 
-When('I enter checkout information', async function() {
+When(/^I enter checkout information/, async function() {
     await cartPage.enterInformation(data.checkout.firstName, data.checkout.lastName, data.checkout.postalCode);
 });
 
-When('I continue to overview', async function() {
+When(/^I continue to overview/, async function() {
     await cartPage.continue();
 });
 
-When('I finish the order', async function() {
+When(/^I finish the order/, async function() {
     await cartPage.finish();
 });
 

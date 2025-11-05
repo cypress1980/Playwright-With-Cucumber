@@ -5,7 +5,6 @@ class CartPage {
         this.addToCartButton = 'button[data-test="add-to-cart-sauce-labs-backpack"]';
         this.shoppingCartLink = '.shopping_cart_link';
         this.checkoutButton = '#checkout';
-        this.page = page;
         this.firstNameInput = '#first-name';
         this.lastNameInput = '#last-name';
         this.postalCodeInput = '#postal-code';
