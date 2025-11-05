@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 202691122
+              "duration": 265605937
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 215591
+              "duration": 173202
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 482842306
+              "duration": 420700741
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106174648
+              "duration": 116754605
             }
           },
           {
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 758357
+              "duration": 790532
             }
           },
           {
@@ -74,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96220812
+              "duration": 90943101
             }
           },
           {
@@ -87,7 +87,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32992285
+              "duration": 50083182
             }
           },
           {
@@ -100,7 +100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28635184
+              "duration": 20106950
             }
           },
           {
@@ -113,7 +113,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37494602
+              "duration": 47722516
             }
           },
           {
@@ -126,7 +126,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31850803
+              "duration": 46319271
             }
           },
           {
@@ -139,7 +139,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2696401
+              "duration": 2651655
             }
           },
           {
@@ -147,13 +147,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 33572399
+              "duration": 37146276
             }
           }
         ],
         "tags": [
           {
-            "name": "@smoke",
+            "name": "@regression",
             "line": 1
           }
         ],
@@ -166,92 +166,10 @@
     "name": "Sauce Demo purchase flow",
     "tags": [
       {
-        "name": "@smoke",
+        "name": "@regression",
         "line": 1
       }
     ],
     "uri": "smoke/features/sauceDemoAddCart.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "sauce-demo-login-flow;successful-login-flow",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Successful Login flow",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 76900938
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 77053
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I open the saucedemo homepage",
-            "match": {
-              "location": "smoke/step_definitions/pages/login/login.steps.js:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 302310193
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I login with standard user",
-            "match": {
-              "location": "smoke/step_definitions/pages/login/login.steps.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 101814626
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 30398749
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "sauce-demo-login-flow",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Sauce Demo Login flow",
-    "tags": [
-      {
-        "name": "@smoke",
-        "line": 1
-      }
-    ],
-    "uri": "smoke/features/sauceDemoLogin.feature"
   }
 ]
