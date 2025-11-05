@@ -14,10 +14,6 @@ class CartPage {
         this.successMessage = '.complete-header';
     }
 
-    async clickCheckout() {
-        await this.page.click(this.checkoutButton);
-    }
-
     async addToCart() {
         await this.page.click(this.addToCartButton);
     }

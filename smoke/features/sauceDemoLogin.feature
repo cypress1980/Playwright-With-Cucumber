@@ -1,6 +1,6 @@
 @smoke
-Feature: Sauce Demo purchase flow
+Feature: Sauce Demo Login flow
 
-  Scenario: Successful purchase flow for one product
+  Scenario: Successful Login flow
     Given I open the saucedemo homepage
     When I login with standard user
