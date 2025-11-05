@@ -14,7 +14,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1126197145
+              "duration": 2461529929
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 265174
             }
           },
           {
@@ -27,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 305281611
+              "duration": 3351898213
             }
           },
           {
@@ -40,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 124402478
+              "duration": 125161172
             }
           },
           {
@@ -49,11 +57,11 @@
             "line": 7,
             "name": "I add one product to the cart",
             "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:8"
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 367243
+              "duration": 24482241
             }
           },
           {
@@ -62,11 +70,11 @@
             "line": 8,
             "name": "I open the cart",
             "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:15"
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 234506
+              "duration": 37137067
             }
           },
           {
@@ -75,20 +83,71 @@
             "line": 9,
             "name": "I click checkout",
             "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:22"
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 234546
+              "duration": 46759233
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I enter checkout information",
+            "match": {
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20491308
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I continue to overview",
+            "match": {
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47195577
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I finish the order",
+            "match": {
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31278660
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the success message \"Thank you for your order!\"",
+            "match": {
+              "location": "smoke/step_definitions/pages/cart/cart.steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2648957
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 883605,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'click')\n    at CartPage.addToCart (/home/runner/work/Playwright-With-Cucumber/Playwright-With-Cucumber/smoke/step_definitions/pages/cart/cart.page.js:22:25)\n    at World.<anonymous> (/home/runner/work/Playwright-With-Cucumber/Playwright-With-Cucumber/smoke/step_definitions/pages/cart/cart.steps.js:9:14)"
+              "status": "passed",
+              "duration": 56153011
             }
           }
         ],
@@ -118,17 +177,25 @@
     "elements": [
       {
         "description": "",
-        "id": "sauce-demo-purchase-flow;successful-purchase-flow-for-one-product",
+        "id": "sauce-demo-login-flow;successful-login-flow",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Successful purchase flow for one product",
+        "name": "Successful Login flow",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 89178165
+              "duration": 76582618
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60161
             }
           },
           {
@@ -141,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 183757455
+              "duration": 167671100
             }
           },
           {
@@ -154,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 120727390
+              "duration": 116170198
             }
           },
           {
@@ -162,7 +229,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31384568
+              "duration": 30184259
             }
           }
         ],
@@ -175,10 +242,10 @@
         "type": "scenario"
       }
     ],
-    "id": "sauce-demo-purchase-flow",
+    "id": "sauce-demo-login-flow",
     "line": 2,
     "keyword": "Feature",
-    "name": "Sauce Demo purchase flow",
+    "name": "Sauce Demo Login flow",
     "tags": [
       {
         "name": "@smoke",
