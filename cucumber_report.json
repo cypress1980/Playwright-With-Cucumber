@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "sauce-demo-purchase-flow;successful-purchase-flow-for-one-product",
+        "id": "sauce-demo-login-flow;successful-login-flow",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Successful purchase flow for one product",
+        "name": "Successful Login flow",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 265605937
+              "duration": 226755443
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 173202
+              "duration": 245402
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 420700741
+              "duration": 244966650
             }
           },
           {
@@ -48,98 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 116754605
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I add one product to the cart",
-            "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 790532
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I open the cart",
-            "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 90943101
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I click checkout",
-            "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 50083182
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I enter checkout information",
-            "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20106950
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I continue to overview",
-            "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 47722516
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I finish the order",
-            "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 46319271
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I should see the success message \"Thank you for your order!\"",
-            "match": {
-              "location": "smoke/step_definitions/pages/cart/cart.steps.js:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2651655
+              "duration": 127383879
             }
           },
           {
@@ -147,29 +56,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37146276
+              "duration": 42440483
             }
           }
         ],
         "tags": [
           {
-            "name": "@regression",
+            "name": "@smoke",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "sauce-demo-purchase-flow",
+    "id": "sauce-demo-login-flow",
     "line": 2,
     "keyword": "Feature",
-    "name": "Sauce Demo purchase flow",
+    "name": "Sauce Demo Login flow",
     "tags": [
       {
-        "name": "@regression",
+        "name": "@smoke",
         "line": 1
       }
     ],
-    "uri": "smoke/features/sauceDemoAddCart.feature"
+    "uri": "smoke/features/sauceDemoLogin.feature"
   }
 ]
